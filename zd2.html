@@ -1,0 +1,39 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<ul id="dela">
+		<li id="zadanie1">Проснуться</li>
+		<li id="zadanie2">Улыбнуться</li>
+		<li id="zadanie3">Помолиться</li>
+	</ul>
+	<script type="text/javascript">
+		//zadanie 1
+		const zadanie1 = document.getElementById('zadanie1');
+		const zadanie2 = document.getElementById('zadanie2');
+		const zadanie3 = document.getElementById('zadanie3');
+
+		zadanie1.innerHTML = 'Позавтракать';
+		zadanie2.innerHTML = 'Cделать зарядку';
+		zadanie3.innerHTML = 'Убраться в комнате';
+
+		const todoList = document.getElementById('dela');
+		const taskToRemove = document.getElementById('zadanie2');
+		todoList.removeChild(taskToRemove);
+		//zadanie 2
+
+		const par = document.createElement('p');
+		par.textContent = 'pluhhh';
+
+		document.body.appendChild(par);
+
+		const parcopia = par.cloneNode(true);
+
+		document.body.appendChild(parcopia);
+	</script>
+</body>
+</html>
